@@ -6,49 +6,45 @@
     <title>Government of Tamilnadu</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="victim-info">
           <form action="" id="form">
-            <h1 >Victim Information </h1>
-                <div class="container-input">
-                    <label for="Id"> Victim ID:</label>
-                    <input type="number" id="victim_id" name="id">
+            <h1 >victim info </h1>
+
+                <div class="container-id">
+                    <label for="Id" class="id"> Victim ID:</label>
+                    <input type="text" id="id" name="id" class="victim-id">
+                    <label for="name" class="name">Name:</label>
+                    <input type="text" id="name" name="name" >
                     <div class="error"></div>
                 </div>
 
-                <div class="container-input">
-                    <label for="name"> Name:</label>
-                    <input type="text" id="name" name="name" required>
+                <!-- <div class="container-name">
+                    <label for="name" class="n"> Name:</label>
+                    <input type="text" id="name" name="name" class="name" >
                     <div class="error"></div>
-                </div>
+                </div> -->
                 
-                <div class="container-input3">
-                    <!-- <form>
-                        Gender:
-                        <input type="radio" name="gender" value="male" >
-                        Male
-                        <input type="radio" name="gender" value="female"
-                        checked> Female
-                    </form> -->
+                <div class="container-input">
                     <label for="gender"> Gender:</label>
-                    <input type="radio" id="male" name="Gender" value="male" > Male
-                    <input type="radio" id="female" name="Gender" value=" female"> Female
+                    <input type="radio" id="male" name="Gender" value="male" class="gender"> Male
+                    <input type="radio" id="female" name="Gender" value=" female" class="gender"> Female
                     <div class="error"></div>
                 </div>
 
                 <div class="container-input">
                     <label for="phone number"> Phone Number:</label>
-                    <input type="text" value="+91"  name="number" id="number" required>
-                    
+                    <input type="text" value="+91"  name="number" id="number">
+                    <!-- <input type="number" id="country code" name="country code" value="+91"> -->
+                    <!-- <input type="number" name="number" id="number"> -->
                     <div class="error"></div>
                 </div>
 
                 <div class="container-input">
                     <label for="Email">Email:</label>
-                    <input type="text" id="email" name="email" required>
+                    <input type="text" id="email" name="email" >
                     <div class="error"></div>
                 </div>
 
