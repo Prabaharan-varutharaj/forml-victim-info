@@ -1,19 +1,45 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+
 body{
     background-color: rgb(9, 255, 181);
     background-attachment: fixed;
     margin: 0;
     font-family: 'poppins',sans-serif;
+    box-shadow: 0 15px 30px  #5f605c;
+    background-color: rgba(255, 255, 255, 0.677);
+    margin-top: 110px;
+    
+
 }
 
 #form{
-    width: 700px;
+    width: 400px;
     margin: 20vh auto 0 auto;
     background-color: whitesmoke;
     border-radius: 5px;
     padding: 30px;
+    box-shadow: 0 15px 30px  #858682;
+    margin-top: 70px;
+    
     
 }
-
+.gender-title{
+    margin: 30px;
+    font-size: 16px;
+}
+.gender-category{
+    color: grey;
+}
+.gender-category label{
+    padding: 0 20px 0 5px;
+    font-size: 14px;
+}
+.gender-category label,.gender-category input{
+    cursor: pointer;
+}
 #form h1{
     text-align: center;
     color: black;
@@ -24,11 +50,14 @@ body{
     color: white;
     border: 1px solid cornflowerblue;
     border-radius: 5px;
-    padding: 10px;
-    margin: 20px 0px;
+    padding: 5px;
+    margin: 10px 0px;
     cursor: pointer;
-    font-size: 20px;
-    width: 100%;
+    font-size: 15px;
+    width: 180px;
+}
+#form button:hover{
+    color: black;
 }
 
 .container-input
@@ -36,6 +65,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+    
 }
  .container-input input{
     border-radius: 5px ;
@@ -62,36 +92,68 @@ body{
     border-color: red;
  }
 
- .container-id {
+ .container-name {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 15px;
-    font-size: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
     
  }
+ .input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    padding-bottom: 15px;
+    
+}
+#num-div::-webkit-outer-spin-button{
+    -moz-appearance: textfield;
+}
+#num-div::-webkit-outer-spin-button,
+#num-div::-webkit-inner-spin-button{
+    margin: 0;
+    -webkit-appearance: none;
+}
 
-.container-id input{
-    border-radius: 5px ;
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid cornflowerblue;
-    margin-right:auto;
+#address{
+    height:60px;
+    text-align: start;
+}
 
+
+.input-box label,.gender-title{
+    width: 95%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin: 5px 0;
     
 }
 
-.container-id label{
+.input-box input{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-left: 40px;
+}
+.input-box input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0,2);
+}
+@media(max-width:600px){
+    .container{
+        min-width: 280px;
+    }
+    .content{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+}
+
     
-    margin-left: auto; 
-}
 
-.container-id .name{
-    margin-left: 27%;
-    position: absolute;
-}
-
-.container-id .id{
-    margin-right: 28%;
-    position: absolute;
-}
