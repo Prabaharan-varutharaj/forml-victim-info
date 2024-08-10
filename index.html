@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government of Tamilnadu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="victim-info">
+          <form action="" id="form">
+            <h1 >Victim Information </h1>
+                <div class="container-input">
+                    <label for="Id"> Victim ID:</label>
+                    <input type="number" id="victim_id" name="id">
+                    <div class="error"></div>
+                </div>
+
+                <div class="container-input">
+                    <label for="name"> Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error"></div>
+                </div>
+                
+                <div class="container-input3">
+                    <!-- <form>
+                        Gender:
+                        <input type="radio" name="gender" value="male" >
+                        Male
+                        <input type="radio" name="gender" value="female"
+                        checked> Female
+                    </form> -->
+                    <label for="gender"> Gender:</label>
+                    <input type="radio" id="male" name="Gender" value="male" > Male
+                    <input type="radio" id="female" name="Gender" value=" female"> Female
+                    <div class="error"></div>
+                </div>
+
+                <div class="container-input">
+                    <label for="phone number"> Phone Number:</label>
+                    <input type="text" value="+91"  name="number" id="number" required>
+                    
+                    <div class="error"></div>
+                </div>
+
+                <div class="container-input">
+                    <label for="Email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                    <div class="error"></div>
+                </div>
+
+                <div class="container-input">
+                    <label for="address"> Address:</label>
+                    <textarea name="address" id="address" cols="30" rows="6" value="address"></textarea>
+                    <div class="error"></div>
+                </div>
+                <button type="submit">Save </button> <br>
+                <button type="next"> Next ></button>
+          </form>
+        </div>
+    </div>
+</body>
+</html>
