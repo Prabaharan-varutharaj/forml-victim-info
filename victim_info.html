@@ -4,59 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Government of Tamilnadu</title>
-    <link rel="stylesheet" href="victim_info.css">
+    <link rel="stylesheet" href="victim.css">
     <script src="app.js" defer></script>
 </head>
-<body>
+<body style="width: 100px; margin-left: 525px ;" >
+    
     <div class="container">
         <div class="victim-info">
           <form action="" id="form">
             <h1 >victim info </h1>
 
-                <div class="container-id">
-                    <label for="Id" class="id"> Victim ID:</label>
-                    <input type="text" id="id" name="id" class="victim-id">
-                    <label for="name" class="name">Name:</label>
-                    <input type="text" id="name" name="name" >
+            <div class="input-box">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter Username" name="uname" required >
+            </div>            
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter your vaild email address" name="email" required>
+            </div>
+            <div class="input-box">
+                <label for="phonenumber">Phone Number</label>
+                <input id="num-div" type="number" placeholder="Enter phone number" name="phonenumber" required>
+            </div>
+            <span class="gender-title">Gender</span>
+            <div style="margin-bottom: 10px; margin-top: 10px;" class="gender-category">
+                <input type="radio" name="gender" id="male">
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="gender">Female</label>
+            </div>    
+            
+            <div class="input-box">
+                <label for="address">Address</label>
+                <input id="address" style="margin-left: 12%;"   cols="30" rows="6" placeholder="Enter your current address"name="address" required></input >
                     <div class="error"></div>
-                </div>
-
-                <!-- <div class="container-name">
-                    <label for="name" class="n"> Name:</label>
-                    <input type="text" id="name" name="name" class="name" >
-                    <div class="error"></div>
-                </div> -->
-                
-                <div class="container-input">
-                    <label for="gender"> Gender:</label>
-                    <input type="radio" id="male" name="Gender" value="male" class="gender"> Male
-                    <input type="radio" id="female" name="Gender" value=" female" class="gender"> Female
-                    <div class="error"></div>
-                </div>
-
-                <div class="container-input">
-                    <label for="phone number"> Phone Number:</label>
-                    <input type="text" value="+91"  name="number" id="number">
-                    <!-- <input type="number" id="country code" name="country code" value="+91"> -->
-                    <!-- <input type="number" name="number" id="number"> -->
-                    <div class="error"></div>
-                </div>
-
-                <div class="container-input">
-                    <label for="Email">Email:</label>
-                    <input type="text" id="email" name="email" >
-                    <div class="error"></div>
-                </div>
-
-                <div class="container-input">
-                    <label for="address"> Address:</label>
-                    <textarea name="address" id="address" cols="30" rows="6" value="address"></textarea>
-                    <div class="error"></div>
-                </div>
+            </div>
+            <center>
                 <button type="submit">Save </button> <br>
                 <button type="next"> Next ></button>
+            </center>
           </form>
         </div>
     </div>
+
 </body>
 </html>
